@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manipulating the DOM</title>
+  <title>Atul Ghandhi</title>
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
-  <!-- HTML Follows BEM naming conventions 
+
+<body id="top" >
+  <!-- HTML Follows BEM naming conventions
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">
     <nav class="navbar__menu">
@@ -18,42 +20,134 @@
       <ul id="navbar__list"></ul>
     </nav>
   </header>
+
   <main>
     <header class="main__hero">
-      <h1>Landing Page </h1>
+      <h1 id="title">
+        Atul Ghandhi
+      </h1>
     </header>
-    <!-- Each Section has an ID (used for the anchor) and 
+    <!-- Each Section has an ID (used for the anchor) and
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
     <section id="section1" data-nav="Section 1" class="your-active-class">
       <div class="landing__container">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h2 class="section__title">
+          Cognitran
+        </h2>
+        <ul>
+          <li>
+            Worked in an agile environment with a team to fix defects and expand the functionality
+            of vehicle diagnostic software written primarily in Java.
+          </li>
+          <li>
+            Attended and contributed to daily scrum meetings, learning to communicate issues and
+            solutions related to code with team members.
+          </li>
+          <li>
+            Learned to use design patterns and best practices to write readable, testable and
+            expandable code.
+          </li>
+        </ul>
       </div>
     </section>
+
     <section id="section2" data-nav="Section 2">
       <div class="landing__container">
-        <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2 class="section__title">
+          Personal Projects
+        </h2>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <ul class="personalProjects">
+          <h3>
+            <a href="http://www.boby-ghandhi.epizy.com/PhilosophyBlog/HTML_FILES/home.html" id="philo_link">
+              Blog Website
+            </a>
+          </h3>
+          <li>
+            Designed and built a static blogging website from scratch. Includes a home page, multiple blog pages and JavaScript form validation.
+          </li>
+        </ul>
+
+        <ul class="personalProjects">
+          <h3>
+            <a href="http://webprojects.eecs.qmul.ac.uk/ag316/notesSite/home.html">
+              Notes website
+            </a>
+          </h3>
+          <li>
+            Designed and built a multi-page website to share my class notes and past papers with fellow students at University.
+          </li>
+        </ul>
+
+        <ul class="personalProjects">
+          <h3>
+            <a href="http://webprojects.eecs.qmul.ac.uk/ag316/projectSite/home.html">
+              Project presentation website
+            </a>
+          </h3>
+          <li>
+            Designed and built a website to present the features of my final year project (android productivity application).
+          </li>
+        </ul>
+
+        <ul class="personalProjects">
+          <h3>
+            <a href="http://movieticketbooking.epizy.com/home.html">
+              Movie ticket booking page
+            </a>
+          </h3>
+          <li>
+            Following a Udemy video tutorial, built a movie seat and ticket selection page.
+          </li>
+        </ul>
+
       </div>
     </section>
+
     <section id="section3" data-nav="Section 3">
       <div class="landing__container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <h2 class="section__title">
+          Queen Mary, University of London
+        </h2>
+        <h3>
+          Java Back End Full Stack Android Application
+        </h3>
+        <ul>
+          <li>
+            Developed a full stack android application with a pure java back end and xml front end.
+          </li>
+          <li>Used Google Firebase framework to provide user authentication and real time cloud database.</li>
+          <li>
+            Application used academic research to aid students in changing their revision techniques to more effective ones.
+          </li>
+        </ul>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h3>
+          Queen Mary University: JavaFX Application
+        </h3>
+        <ul>
+          <li>
+            Managed a team of four students to build a JavaFX mobile application using a pure Java back end and JavaFX front end.
+          </li>
+          <li>
+            Application included features to manage student finances, events, alarms and library activities.
+          </li>
+        </ul>
       </div>
     </section>
+    <p id="topLink">
+      <a href=#top>Back to the top</a>
+    </p>
   </main>
   <footer class="page__footer">
-    <p>&copy Udacity</p>
+    <p>
+      Atul Ghandhi &bull; bobyghandhi@gmail.com &bull; <a href="https://github.com/atulghandhi">Github</a> &bull; <a href="https://linkedin.com/in/atul-ghandhi">Linkedin</a>
+    </p>
   </footer>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>
